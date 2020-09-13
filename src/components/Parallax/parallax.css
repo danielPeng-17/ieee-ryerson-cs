@@ -1,0 +1,23 @@
+.parallaxImg{
+    background-image: url('../../assets/images/ryerson-top-view.jpg') ;
+    filter: brightness(55%);
+    height: 55vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 5;
+}
+
+@media only screen and (max-width: 991.98px){
+    .parallaxImg{
+        margin-top: 3%;
+        height: 45vh;
+    }
+}
+
+@media only screen and (max-width: 767.98px){
+    .parallaxImg{
+        display: none;
+    }
+}

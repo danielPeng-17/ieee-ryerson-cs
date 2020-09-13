@@ -1,0 +1,61 @@
+html, body{
+    scroll-behavior: unset !important;
+}
+
+video{
+    width: 100%;
+    margin: 1em 0 2em;
+    border-radius: 6px;
+    box-shadow: 10px 10px 41px #c5c6c7, 
+                -10px -10px 41px #dfe3e6;
+}
+
+.content-wrapper{
+    background-color: #F4F8FB;
+    padding: 2% 6%;
+}
+
+.note{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 8px solid #FFDC00;
+    border-radius: 6px;
+    background-color: white;
+    padding: 15px 30px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.event-text-block{
+    padding: 3% 18%;
+}
+
+.p-text{
+    line-height: 1.5em;
+    margin: 0 0 1.5em 0;
+    letter-spacing: 1px;
+    font-size: 1.25rem;
+}
+
+@media only screen and (max-width: 1200px){
+    .event-text-block{
+        padding: 5% 13%;
+    }
+}
+
+@media only screen and (max-width: 991.98px){
+    .event-text-block{
+        padding: 5% 8%;
+    }
+}
+
+@media only screen and (max-width: 767.98px){
+    .event-text-block{
+        padding: 5% 8%;
+    }
+}
+
+@media screen and (max-width: 575.98px){
+    .event-text-block{
+        padding: 5% 2%;
+    }
+}

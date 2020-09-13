@@ -1,0 +1,290 @@
+.nav .navbar-container{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 100;
+    letter-spacing: 1px;
+    transition: all 0.5s ease-in-out;
+    margin: env(safe-area-inset-top);
+}
+
+.nav .navbar-logo{
+    float: left;
+    padding: 0 2.5%;
+}
+
+.ryerson-ieee-logo{
+    max-height: 68px;
+    margin-top: 6px;
+    padding-top: 0;
+}
+
+.logo-btn:focus{
+    outline: none !important;
+}
+
+.logo-btn::-moz-focus-inner{
+    border: 0;
+}
+
+.navLinks{
+    text-align: right;
+    margin: 0;
+    line-height: 80px;
+}
+
+.navbar-link{
+    color: #F4F8FB;
+    font-weight: bold;
+    font-size: calc(1.05rem + 0.55vmin);
+    letter-spacing: 2.5px;
+    text-decoration: none;  
+    margin: 0 4% 0 0; 
+    cursor: pointer;
+}
+
+.navbar-link:hover{
+    text-decoration: underline;
+}
+
+.sidebar{
+    display: none;
+}
+
+@media screen and (max-width: 1250px){
+}
+
+@media screen and (max-width: 992px){
+    .ryerson-ieee-logo{
+        max-height: 70px;
+        margin-left: 3%;
+        margin-top: 15px;
+    }
+
+    .nav .navbar-container{
+        position: absolute;
+    }
+
+    .navLinks{
+        display: none;
+    }
+
+    .sidebar{
+        display: block;
+        position: fixed;
+    }
+
+    .sidebar-toggle-btn{
+        position: fixed;
+        z-index: 100;
+        border: none;
+        background-color: rgba(0,0,0,0.001);
+        padding: 12px 10px;
+        margin: 20px;
+        right: 0;
+        outline: none !important;
+    }
+
+    .btn-back{
+        border: black 1px solid;
+        background-color: white;
+    }
+
+    .btn-back:hover{
+        background-color: rgb(233, 233, 233);
+        transition: background-color 0.3s ease;
+    }
+
+    .burger-btn{
+        height: 3px;
+        width: 27px;
+        display: block;
+        background-color: black;
+    }
+
+    .temp-middle{
+        margin: 5px 0;
+    }
+
+    .sidebar .top-burger{
+        animation: transform-out-top 0.8s backwards;
+        animation-direction: reverse;
+    }
+
+    .sidebar .middle-burger{
+        margin: 5px 0;
+        animation: transform-out-middle 0.8s backwards;
+        animation-direction: reverse;
+    }
+
+    .sidebar .bottom-burger{
+        animation: transform-out-bottom 0.8s backwards;
+        animation-direction: reverse;
+    }
+
+    .sidebar.active .top-burger{
+        animation: transform-in-top 0.8s forwards;
+    }
+
+    .sidebar.active .middle-burger{
+        animation: transform-in-middle 0.8s forwards;
+    }
+
+    .sidebar.active .bottom-burger{
+        animation: transform-in-bottom 0.8s forwards;
+    }
+
+    @keyframes transform-in-top{
+        0% {
+            transform: translate(0,0) rotate(0deg);
+        }
+        50% {
+            transform: translate(0, 7px) rotate(0deg);
+        }
+        100% {
+            transform: translate(0, 7px) rotate(135deg);
+        }
+    }
+
+    @keyframes transform-in-middle{
+        0%{
+            transform: scale(1);
+        }
+        25% {
+            transform: scale(1);
+        }
+        75%{
+            transform: scale(0);
+        }
+        100% {
+            transform: scale(0);
+        }
+    }
+
+    @keyframes transform-in-bottom {
+        0% {
+            transform: translate(0,0) rotate(0deg);
+        }
+        50% {
+            transform: translate(0, -9px) rotate(0deg);
+        }
+        100% {
+            transform: translate(0, -9px) rotate(45deg);
+        }
+    }
+
+    @keyframes transform-out-top{
+        0% {
+            transform: translate(0,0) rotate(0deg);
+        }
+        50% {
+            transform: translate(0, 7px) rotate(0deg);
+        }
+        100% {
+            transform: translate(0, 7px) rotate(135deg);
+        }
+    }
+
+    @keyframes transform-out-middle{
+        0%{
+            transform: scale(1);
+        }
+        25% {
+            transform: scale(1);
+        }
+        75%{
+            transform: scale(0);
+        }
+        100% {
+            transform: scale(0);
+        }
+    }
+
+    @keyframes transform-out-bottom {
+        0% {
+            transform: translate(0,0) rotate(0deg);
+        }
+        50% {
+            transform: translate(0, -9px) rotate(0deg);
+        }
+        100% {
+            transform: translate(0, -9px) rotate(45deg);
+        }
+    }
+
+    .burger-label{
+        margin: 0 auto;
+        padding: 0;
+        font-weight: 600;
+        font-size: 12px;
+        bottom: 0;
+    }
+
+    .sidebar-menu{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: #2E2E2E;
+        padding: 7% 5%;
+    }
+
+    .sidebar ul{
+        padding: 0;
+    }
+
+    .sidebar-menu li{
+        margin-top: 7%;
+        text-align: center;
+        list-style: none;
+    }
+
+    .sidebar-menu li a, .sidebar-menu li Link{
+        color: white;
+        font-size: calc(20px + 2vmin);
+        letter-spacing: 2px;
+        margin: 0 auto;
+        text-decoration: none;
+    }
+
+    .sidebar-menu li a:hover, .sidebar-menu li Link:hover{
+        text-decoration: underline;
+    }
+
+    .show-sidebar-items{
+        right: 0;
+        transition: right .5s cubic-bezier(.2,.2,1,1);
+    }
+    
+    .hide-sidebar-items{
+        right: -115%;
+        transition: right .5s cubic-bezier(.2,.2,1,1);
+    }   
+}
+
+@media screen and (max-width: 757.98px){
+    .ryerson-ieee-logo{
+        max-height: 65px;
+        margin-left: 3%;
+        margin-top: 20px;
+    }
+    
+    .sidebar-menu{
+        padding: 19% 0;
+    }
+    .sidebar-menu li{
+        margin-top: 6%;
+    }
+}
+
+@media screen and (max-width: 575.98px){
+    .ryerson-ieee-logo{
+        max-height: 60px;
+        margin-left: 3%;
+        margin-top: 15px;
+    }
+
+    .sidebar-menu{
+        padding: 17% 0;
+    }
+
+}

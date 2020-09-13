@@ -1,0 +1,69 @@
+p{
+    line-height: 1.5em;
+}
+
+#aboutUs{
+    padding: 3% 0;
+    height: fit-content;
+    vertical-align: middle;
+    justify-content: center;
+    text-align: center;
+    background: #F4F8FB;
+}
+
+#aboutUs .container{
+    width: 40%;
+    margin: 0 auto;
+}
+
+.aboutUsDivider{
+    width: 100%;
+    margin: 5% auto;
+    border: none;
+    border-bottom: 1px solid #666; 
+}
+
+.bottom-aboutUs{
+    width: 100%;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1200px){
+    #aboutUs .container{
+        width: 65%;
+    }
+}
+
+@media only screen and (max-width: 991.98px){
+    #aboutUs{
+        float: none;
+        height: auto;
+        padding: 4% 5%;
+        display: inline-block;
+    }
+
+    #aboutUs .container{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 767.98px){
+    #aboutUs{
+        float: none;
+        height: auto;
+        padding: 3% 3%;
+    }
+
+    #aboutUs .container{
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 575.98px){
+    #aboutUs .heading{
+        margin: 8% 0;
+    }
+    #aboutUs .container{
+        width: 100%;
+    }
+}

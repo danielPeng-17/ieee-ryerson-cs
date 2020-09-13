@@ -1,0 +1,19 @@
+#events{
+    padding: 3% 0;
+    overflow: hidden;
+    position: relative;
+    margin-top: 0;
+    background-color: #F4F8FB;
+}
+
+@media only screen and (max-width: 991.98px){
+}
+
+@media only screen and (max-width: 767.98px){
+}
+
+@media screen and (max-width: 575.98px){
+    #events .heading{
+        margin: 8% auto 0;
+    }
+}

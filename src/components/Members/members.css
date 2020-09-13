@@ -1,0 +1,42 @@
+.members-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 0.5fr));
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+    padding: 3% 0;
+    background-color: #F4F8FB;
+}
+
+.member-box{
+    border-radius: 2%;
+    background-color: white;
+    padding-bottom: 1em;
+    position: relative;
+    width: 300px;
+    height: fit-content;
+    text-align: center;
+    margin: 10% auto;
+    display: inline-block;
+    overflow: hidden;
+    box-shadow: 12px 12px 41px #c5c6c7, 
+                -12px -12px 41px #dfe3e6;
+
+}
+
+.profile{
+    width: 300px;
+    height: 380px;
+    object-fit: cover;
+}
+
+.name{
+    font-size: larger;
+    letter-spacing: 1.3px;
+}
+
+.position{
+    font-size: large;
+    font-weight: 500;
+    letter-spacing: 1.15px;
+}
