@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { Link } from 'react-router-dom';
-import '../../styles/index.css';
+import '../../globalStyles/globalStyles.css';
 import './aboutUs.css';
 
 

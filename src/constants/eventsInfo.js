@@ -1,5 +1,42 @@
  // add new events here
  const items = [
+     
+    {
+        id: '12m3lf9dx0efsS0DF34ER5df',
+        eventImg: require('../assets/events/coding-challenge-fall-2020/codingchallengeheader.png'),
+        eventTitle: 'IEEE Ryerson CIC Coding Challenge',
+        eventStartDate: '11.09.2020',
+        eventEndDate: '11.23.2020',
+        collab: false,
+        misc: {
+            pdf: null,
+            images: {
+                header: require('../assets/events/coding-challenge-fall-2020/codingchallengeheader.png'),
+            },
+            texts: {
+                text1: `
+                            IEEE Ryerson Computational Intelligence Chapter is proud to announce the IEEE Ryerson Competitive 
+                            Coding Competition on November 28, 2020! This interactive competition will bring together programmers from 
+                            all levels to learn and tackle coding challenges.
+                        `,
+                text2: 'We are excited to offer an event series leading up to the competition providing:',
+                text3: '\n ● Workshops teaching fundamental programming skills',
+                text4: '\n ● Opportunities for students to engage with each other',
+                text5: '\n ● Practice to build collaboration skills with your team',
+                text6: `
+                            Of course, we will offer various prizes $$$ to encourage and motivate you throughout the events!!
+                        `,
+                text7: `
+                            Interested? Visit @ieee_ryersoncic on Instagram for more information!
+                        `,
+                text8: `
+                            *This project is supported financially by the Student Initiatives Fund. SIF is administered by the Department 
+                            of Student Life on behalf of the Vice Provost Students, Ryerson University.
+                        `
+            },
+            notes: null,
+        }
+    },
     {
         id: "1p23WaH11odo253jnFSPD23wLw254",
         eventImg: require('../assets/events/game-dev-summer-2020/unity-event-img.jpg'),
@@ -60,7 +97,8 @@
             texts: null,
             notes: null
         }
-    },
+    }
+
 
     // test data
 

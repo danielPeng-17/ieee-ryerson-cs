@@ -11,8 +11,8 @@ function CarouselItem(props){
             if (misc.pdf != null){
                 window.open(misc.pdf, '_blank');
             }else if (misc.images != null && misc.texts != null){
+                // if event exists then push the new path to history
                 history.push({
-                    // pathname: '/event-details/:event_id'
                     pathname: '/event-details/' + props.id,
                 });
             }

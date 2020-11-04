@@ -8,10 +8,10 @@ import Navbar from './components/Navbar/Navbar';
 //     setTimeout(() => resolve(import("./pages/index")), 600);
 //   });
 // });
-const Index = lazy(() => import('./pages/index'));
-const Team = lazy(() => import('./pages/team'));
-const EventDetails = lazy(() => import('./pages/event-details'));
-const PageNotFound = lazy(() => import('./pages/page-not-found'));
+const Index = lazy(() => import('./pages/index/index'));
+const Team = lazy(() => import('./pages/team/team'));
+const EventDetails = lazy(() => import('./pages/eventDetails/event-details'));
+const PageNotFound = lazy(() => import('./pages/page404/page-not-found'));
 
 
 const loading = (

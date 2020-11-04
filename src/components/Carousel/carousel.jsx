@@ -2,7 +2,6 @@ import React, { Component, Fragment } from 'react';
 import { gsap } from 'gsap';
 import { Draggable } from 'gsap/Draggable';
 import CarouselItem from './carouselItem';
-import '../../styles/index.css';
 import isEventCurrent from '../../helpers/date';
 import items from '../../constants/eventsInfo';
 import './carousel.css';

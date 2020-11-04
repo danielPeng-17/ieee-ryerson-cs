@@ -1,10 +1,10 @@
 import React, { Fragment, Component } from 'react';
 // components
-import Header from '../components/Header/header';
-import Members from '../components/Members/members';
-import Contact from '../components/Contact/contact';
+import Header from '../../components/Header/header';
+import Members from '../../components/Members/members';
+import Contact from '../../components/Contact/contact';
 // styles
-import '../styles/team.css'
+import './team.css'
 
 export default class Team extends Component{
     componentDidMount() {
@@ -17,7 +17,7 @@ export default class Team extends Component{
                 <Header 
                     header={'Meet the Team!'} 
                     height={65} 
-                    backgroundImage={require('../assets/images/ryerson-slc-day.jpg')} 
+                    backgroundImage={require('../../assets/images/ryerson-slc-day.jpg')} 
                     backgroundPosition={'center'} 
                     brightness={80} 
                 />

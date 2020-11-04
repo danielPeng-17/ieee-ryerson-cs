@@ -13,6 +13,10 @@
     height: -moz-fit-content;
 }
 
+.sif-sponsor{
+    background-image: url('../../assets/sponsors/RU-SL-StudentLifePrograms.png');
+}
+
 .ieee-sponsor{
     background-image: url('../../assets/sponsors/ieee-toronto.png');
 }

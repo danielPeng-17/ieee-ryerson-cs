@@ -9,6 +9,7 @@ export default function Sponsors(){
 
             <div className="row-container">
                 <div className="col-container">
+                    <a className="sponsor-btn sif-sponsor" href="https://www.ryerson.ca/student-life-and-learning/" title="Ryerson Student Initiatives Fund (SIF)" target="_blank" rel="noopener noreferrer" aria-hidden="true"> </a>
                     <a className="sponsor-btn ieee-sponsor" href="https://www.ieeetoronto.ca/" title="IEEE Toronto" target="_blank" rel="noopener noreferrer" aria-hidden="true"> </a>
                     <a className="sponsor-btn wie-sponsor" href="https://wie.ieee.org/" title="IEEE Women in Engineering" target="_blank" rel="noopener noreferrer" aria-hidden="true"> </a>
                 </div>

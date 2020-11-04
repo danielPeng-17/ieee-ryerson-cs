@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
-import '../../styles/index.css';
+import '../../globalStyles/globalStyles.css';
 import './contact.css';
 
 export default class Contact extends Component{

@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react';
 import { useHistory } from 'react-router-dom';
-import Header from '../components/Header/header';
-import Contact from '../components/Contact/contact';
-import items from '../constants/eventsInfo';
-import '../styles/eventDetails.css';
+import Header from '../../components/Header/header';
+import Contact from '../../components/Contact/contact';
+import items from '../../constants/eventsInfo';
+import './eventDetails.css';
 
 function EventDetails(props) {
     const history = useHistory();
@@ -37,10 +37,10 @@ function EventDetails(props) {
                         }
                         <div className="event-text-block">
                             {
-                                Object.values(data.misc.texts).map((text) => {
+                                Object.values(data.misc.texts).map((text, index) => {
                                     if (text.search('--video--') !== -1){
                                         return(
-                                            <div>
+                                            <div key={index}>
                                                 <video src={data.misc.video} type="video/mp4" controls />
                                             </div>
                                         );
@@ -49,7 +49,7 @@ function EventDetails(props) {
                                     if (text.search('{<a href=') !== -1 && text.search('</a>}') !== -1){
                                         let url = text.substring(text.search('{<a href=') + 10, text.search('\'>'));
                                         return (
-                                            <p className='p-text'>
+                                            <p className='p-text' key={index}>
                                                 {text.substring(0, text.search('{<a href='))}
                                                 <a href={url} target="_blank" rel="noopener noreferrer" >{text.substring(text.search('\'>') + 2, text.search('</a>}'))}</a>
                                                 {text.substring(text.search('</a>}') + 5)}
@@ -58,7 +58,7 @@ function EventDetails(props) {
                                     }
 
                                     return (
-                                        <p className='p-text'>
+                                        <p className='p-text' key={index}>
                                             {text}
                                         </p>
                                     );
