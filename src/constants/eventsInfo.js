@@ -27,7 +27,7 @@
                             Of course, we will offer various prizes $$$ to encourage and motivate you throughout the events!!
                         `,
                 text7: `
-                            Interested? Visit @ieee_ryersoncic on Instagram for more information!
+                            Visit @ieee_ryersoncic on Instagram for more information.
                         `,
                 text8: `
                             *This project is supported financially by the Student Initiatives Fund. SIF is administered by the Department 

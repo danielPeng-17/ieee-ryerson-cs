@@ -21,7 +21,7 @@
 }
 
 .header-text-wrapper{
-    bottom: 25% !important;
+    bottom: 12% !important;
     text-align: center;
 }
 
@@ -31,7 +31,7 @@
 }
 
 .small-heading{
-    font-size: calc(1.5rem + 2.75vmin);
+    font-size: calc(1.5rem + 3.5vmin);
     margin: 0;
 }
 
@@ -73,7 +73,7 @@
     }
     
     .small-heading{
-        font-size: calc(1.25rem + 2vmin);
+        font-size: calc(1.25rem + 2.25vmin);
     }
 }
 
