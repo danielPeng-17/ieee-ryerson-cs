@@ -75,7 +75,7 @@ export default class Contact extends Component{
                     </div>
                 </div>
 
-                <p className="copyright">© 2020 Ryerson Computational Intelligence Chapter</p>
+                <p className="copyright">© 2021 Ryerson Computational Intelligence Chapter</p>
             </div>
         );
     }

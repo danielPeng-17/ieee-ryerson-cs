@@ -97,6 +97,7 @@ export default class Carousel extends Component{
                                     eventEndDate={item.eventEndDate} 
                                     time={isEventCurrent(item.eventStartDate, item.eventEndDate)} 
                                     collab={item.collab} 
+                                    external={item.external}
                                     misc={item.misc} 
                                 />
                             );

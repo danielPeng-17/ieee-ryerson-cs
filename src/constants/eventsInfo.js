@@ -1,6 +1,32 @@
  // add new events here
  const items = [
-     
+    {
+        id: 'j2o21ppo3jdfdn557b9fx0s02',
+        eventImg: require('../assets/events/ieee-career-night-series-fall-2021/ieee-career-night-series-header.png'),
+        eventTitle: 'IEEE Career Night Series',
+        eventStartDate: '09.16.2021',
+        eventEndDate: '11.11.2021',
+        collab: false,
+        external: true,
+        misc: {
+            pdf: null,
+            images: {
+                header: require('../assets/events/ieee-career-night-series-fall-2021/ieee-career-night-series-header.png'),
+                image: require('../assets/events/ieee-career-night-series-fall-2021/IEEE_CAREERS_NIGHT_SERIES_POSTER.png'),
+            },
+            texts: {
+                text1: `
+                            Not sure how to find an internship? Unclear about how internships are structured? Join a Ryerson 
+                            University Career & Co-op Centre, IEEE, and IEEE Women in Engineering collaboration for this informative 
+                            workshop to learn about internship opportunities available for undergraduate and graduate students on Sept. 16 from 6-7 pm.
+                            Register at {<a href='https://bit.ly/IEEESession1'>https://bit.ly/IEEESession1</a>}.
+                        `,
+                text2: '--image--'
+            },
+            notes: null,
+        }
+    }, 
+
     {
         id: '12m3lf9dx0efsS0DF34ER5df',
         eventImg: require('../assets/events/coding-challenge-fall-2020/codingchallengeheader.png'),
@@ -8,6 +34,7 @@
         eventStartDate: '11.09.2020',
         eventEndDate: '11.23.2020',
         collab: false,
+        external: false,
         misc: {
             pdf: null,
             images: {
@@ -44,6 +71,7 @@
         eventStartDate: '07.27.2020',
         eventEndDate: '08.24.2020',
         collab: false,
+        external: false,
         misc: {
             pdf: null,
             images: {
@@ -91,6 +119,7 @@
         eventStartDate: '07.23.2020',
         eventEndDate: 'null',
         collab: true,
+        external: false,
         misc: {
             pdf: require('../assets/events/scalable-deployment-of-ML-summer-2020/ieee scalable deployment of ML.pdf'),
             images: null,

@@ -68,6 +68,18 @@
     right: -29%;
 }
 
+.external-tag{
+    background-color: #343A40;
+    padding: 100px 50px 2px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    position: absolute;
+    transform: rotate(45deg);
+    top: -15%;
+    right: -24%;
+}
+
 .eventImg{
     width: 320px;
     object-fit: cover;

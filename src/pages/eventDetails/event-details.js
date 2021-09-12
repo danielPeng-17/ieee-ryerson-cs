@@ -45,6 +45,14 @@ function EventDetails(props) {
                                             </div>
                                         );
                                     }
+
+                                    if (text.search('--image--') !== -1){
+                                        return(
+                                            <div key={index}>
+                                                <img src={data.misc.images.image} alt='event' width="80%" style={{ margin: '0 10%'}} />
+                                            </div>
+                                        );
+                                    }
                                     
                                     if (text.search('{<a href=') !== -1 && text.search('</a>}') !== -1){
                                         let url = text.substring(text.search('{<a href=') + 10, text.search('\'>'));
