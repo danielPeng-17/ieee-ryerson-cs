@@ -1,5 +1,34 @@
  // add new events here
  const items = [
+     {
+        id: 'f2fdg6sm556ubc65edn67n57n',
+        eventImg: require('../assets/events/ieee-cic-x-gmu-indie-game-jam-fall-2021/GMU_Collab_header.jpg'),
+        eventTitle: 'IEEE CIC x Ryerson GMU Indie Game Jam',
+        eventStartDate: '11.04.2021',
+        eventEndDate: '12.02.2021',
+        collab: true,
+        external: false,
+        misc: {
+            pdf: null,
+            images: {
+                header: require('../assets/events/ieee-cic-x-gmu-indie-game-jam-fall-2021/GMU_Collab_header.jpg'),
+                image: require('../assets/events/ieee-cic-x-gmu-indie-game-jam-fall-2021/GMU_Collab_cherry_pink.jpg'),
+            },
+            texts: {
+                text1: `
+                            This series of 5 beginner friendly workshops will teach students how to create their own indie game in Unity. 
+                        `,
+                text2: `
+                            We will teach the building blocks and best practices to create a shooter including creating the player, creating enemies, collectibles, effects, and more!
+                        `,
+                text3: `
+                            All who attend all five sessions will get a certificate from IEEE WIE and can submit their 2D game into a showcase with small prizes at the end of the workshop series. 
+                        `,
+                text4: '--image--'
+            },
+            notes: null,
+        }
+     },
     {
         id: 'j2o21ppo3jdfdn557b9fx0s02',
         eventImg: require('../assets/events/ieee-career-night-series-fall-2021/ieee-career-night-series-header.png'),
