@@ -24,7 +24,8 @@
                 text3: `
                             All who attend all five sessions will get a certificate from IEEE WIE and can submit their 2D game into a showcase with small prizes at the end of the workshop series. 
                         `,
-                text4: '--image--'
+                text4: `Join us by signing up {<a href='https://docs.google.com/forms/d/e/1FAIpQLSfZr77lQp3uqM5livUkAXiJ6COMDpJbtVTlrX4HXsKbsbC19Q/viewform'>here</a>}!`,
+                text5: '--image--'
             },
             notes: null,
         }
